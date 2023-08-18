@@ -1,8 +1,5 @@
-(function () {
-  console.log("Hello World!");
-})();
+const anonymousFunction = (name) => {
+  console.log(`Hi ${name}`);
+}
 
-(function (a, b) {
-  console.log('The subtraction is: ', a - b);
-  return a / b
-})(10, 3)
+anonymousFunction('Jorge');
