@@ -5,7 +5,7 @@ function factorial(n) {
   return n * factorial(n - 1); // recursive case
 }
 
-console.log('El factorial es: ', factorial(5));
+console.log('The factorial is: ', factorial(5));
 
 function fibonacci(n) {
   if (n === 1 || n === 2) {
@@ -14,4 +14,12 @@ function fibonacci(n) {
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-console.log('El fibonacci es: ', fibonacci(6));
+console.log('The fibonacci is: ', fibonacci(6));
+
+function sum(n) {
+  if (n === 1) return 1;
+
+  return n + sum(n - 1);
+}
+
+console.log('The sum is: ', sum(5));
